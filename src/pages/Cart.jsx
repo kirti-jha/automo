@@ -34,16 +34,16 @@ export default function Cart() {
           <button className="btn btn-accent btn-lg" onClick={() => nav('/search')}>Browse Parts</button>
         </div>
       ) : (
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 'var(--sp-8)', alignItems: 'flex-start' }}>
+        <div className="grid-cart-layout" style={{ gap: 'var(--sp-8)', alignItems: 'flex-start' }}>
           {/* ── LEFT: Items ── */}
           <div>
             {/* Header row */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 120px 140px 110px 40px', gap: 'var(--sp-4)', background: 'var(--primary)', color: 'white', padding: 'var(--sp-3) var(--sp-5)', borderRadius: 'var(--radius-md)', fontSize: 12, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 'var(--sp-3)' }}>
+            <div className="grid-cart-item" style={{ gap: 'var(--sp-4)', background: 'var(--primary)', color: 'white', padding: 'var(--sp-3) var(--sp-5)', borderRadius: 'var(--radius-md)', fontSize: 12, fontWeight: 700, textTransform: 'uppercase', letterSpacing: 1, marginBottom: 'var(--sp-3)' }}>
               <span>Product</span><span style={{ textAlign: 'center' }}>Unit Price</span><span style={{ textAlign: 'center' }}>Quantity</span><span style={{ textAlign: 'right' }}>Total</span><span />
             </div>
 
             {items.map(item => (
-              <div key={item.id} style={{ background: 'white', borderRadius: 'var(--radius-md)', padding: 'var(--sp-5)', marginBottom: 'var(--sp-3)', border: '1px solid var(--border)', display: 'grid', gridTemplateColumns: '1fr 120px 140px 110px 40px', gap: 'var(--sp-4)', alignItems: 'center', boxShadow: 'var(--shadow-xs)' }}>
+              <div key={item.id} className="grid-cart-item" style={{ background: 'white', borderRadius: 'var(--radius-md)', padding: 'var(--sp-5)', marginBottom: 'var(--sp-3)', border: '1px solid var(--border)', gap: 'var(--sp-4)', alignItems: 'center', boxShadow: 'var(--shadow-xs)' }}>
                 {/* Product */}
                 <div className="flex gap-4 items-center">
                   <div style={{ width: 80, height: 80, borderRadius: 'var(--radius-md)', background: 'var(--bg)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '1px solid var(--border)' }}>

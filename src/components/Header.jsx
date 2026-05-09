@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <header style={{ position: 'sticky', top: 0, zIndex: 100, boxShadow: '0 2px 20px rgba(0,0,0,0.12)' }}>
       {/* Top Bar */}
-      <div style={{ background: 'var(--primary)', color: 'white', padding: '8px 0', fontSize: '12px' }}>
+      <div className="header-top-bar" style={{ background: 'var(--primary)', color: 'white', padding: '8px 0', fontSize: '12px' }}>
         <div className="container flex items-center justify-between">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1"><Zap size={12} style={{ color: 'var(--accent)' }} /> Free shipping on orders above ₹999</span>
@@ -43,7 +43,7 @@ export default function Header() {
 
       {/* Main Header */}
       <div style={{ background: 'var(--primary-mid)', padding: '0' }}>
-        <div className="container flex items-center gap-6" style={{ height: '72px' }}>
+        <div className="container flex items-center gap-6 header-main-container" style={{ height: '72px' }}>
           {/* Logo */}
           <Link to="/" style={{ flexShrink: 0 }}>
             <div className="flex items-center gap-2">
@@ -63,7 +63,7 @@ export default function Header() {
           </Link>
 
           {/* Search */}
-          <form onSubmit={handleSearch} className="flex-1" style={{ maxWidth: 600 }}>
+          <form onSubmit={handleSearch} className="flex-1 header-search-form" style={{ maxWidth: 600 }}>
             <div className="flex" style={{ background: 'white', borderRadius: 'var(--radius-md)', overflow: 'hidden', boxShadow: 'var(--shadow-md)' }}>
               <div style={{ borderRight: '1px solid var(--border)', padding: '0 12px', display: 'flex', alignItems: 'center', background: 'var(--bg)' }}>
                 <select style={{ border: 'none', background: 'transparent', fontSize: 13, color: 'var(--text-2)', cursor: 'pointer', fontWeight: 600, paddingRight: 4 }}>
@@ -104,7 +104,7 @@ export default function Header() {
       </div>
 
       {/* Nav Bar */}
-      <div style={{ background: 'var(--primary-light)', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+      <div className="nav-bar-desktop" style={{ background: 'var(--primary-light)', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
         <div className="container flex items-center gap-1" style={{ height: 44 }}>
           <Link to="/search" style={{
             background: 'var(--accent)', color: 'white', padding: '6px 18px',

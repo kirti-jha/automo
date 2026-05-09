@@ -68,7 +68,7 @@ export default function Home() {
         <div style={{ position:'absolute', bottom:-120, left:-60, width:300, height:300, borderRadius:'50%', background:'rgba(59,130,246,0.06)', pointerEvents:'none' }} />
 
         <div className="container">
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'var(--sp-12)', alignItems:'center' }}>
+          <div className="grid-hero" style={{ gap:'var(--sp-12)', alignItems:'center' }}>
             {/* Left */}
             <div className="fade-up">
               <div className="flex items-center gap-2" style={{ marginBottom:'var(--sp-4)' }}>
@@ -99,7 +99,7 @@ export default function Home() {
             </div>
 
             {/* Right — Featured Images Grid */}
-            <div style={{ display:'grid', gridTemplateColumns:'1.4fr 1fr', gap:'var(--sp-4)' }}>
+            <div className="grid-featured" style={{ gap:'var(--sp-4)' }}>
               {PRODUCTS.slice(0,3).map((p, i) => (
                 <div key={p.id} onClick={() => nav(`/product/${p.id}`)} style={{
                   background: i===0 ? 'linear-gradient(to bottom right, rgba(249,115,22,0.12), rgba(249,115,22,0.02))' : 'rgba(255,255,255,0.05)',
@@ -125,7 +125,7 @@ export default function Home() {
       {/* ── STATS BAR ──────────────────────────────────────────────────── */}
       <div style={{ background:'var(--accent)', color:'white', padding:'var(--sp-5) 0' }}>
         <div className="container">
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:'var(--sp-4)', textAlign:'center' }}>
+          <div className="grid-stats" style={{ gap:'var(--sp-4)', textAlign:'center' }}>
             {[
               { n:'10,000+', l:'Part Numbers' },
               { n:'50+', l:'Top Brands' },
@@ -191,7 +191,7 @@ export default function Home() {
       {/* ── PROMO BANNER ───────────────────────────────────────────────── */}
       <section className="section">
         <div className="container">
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'var(--sp-5)' }}>
+          <div className="grid-promo" style={{ gap:'var(--sp-5)' }}>
             {/* Banner 1 */}
             <div style={{ background:'linear-gradient(135deg,#0f1923 0%,#1a3c5c 100%)', borderRadius:'var(--radius-xl)', padding:'var(--sp-10)', position:'relative', overflow:'hidden', cursor:'pointer' }} onClick={()=>nav('/search?cat=brake')}>
               <div style={{ position:'absolute', right:-20, top:'50%', transform:'translateY(-50%)', opacity:0.12, fontSize:140 }}>🔴</div>
@@ -252,7 +252,7 @@ export default function Home() {
       {/* ── TRUST STRIPS ────────────────────────────────────────────────── */}
       <section className="section-sm">
         <div className="container">
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:'var(--sp-5)' }}>
+          <div className="grid-trust" style={{ gap:'var(--sp-5)' }}>
             {[
               { icon:'🛡️', title:'100% Genuine Parts', sub:'All parts are OEM or verified aftermarket' },
               { icon:'🚚', title:'Fast Delivery', sub:'24-48 hour shipping pan India' },
