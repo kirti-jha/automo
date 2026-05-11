@@ -151,7 +151,7 @@ export default function Home() {
             </div>
             <Link to="/search" className="view-all">View All Categories <ChevronRight size={16} /></Link>
           </div>
-          <div className="grid-6" style={{ gap:'var(--sp-4)' }}>
+          <div className="grid-5" style={{ gap:'var(--sp-4)' }}>
             {CATEGORIES.map(cat => (
               <div key={cat.id} onClick={() => nav(`/search?cat=${cat.id}`)} style={{
                 background:'white', borderRadius:'var(--radius-lg)', padding:'var(--sp-5) var(--sp-4)',
@@ -161,8 +161,11 @@ export default function Home() {
                 onMouseEnter={e => { const el=e.currentTarget; el.style.borderColor='var(--accent)'; el.style.transform='translateY(-4px)'; el.style.boxShadow='var(--shadow-md)'; }}
                 onMouseLeave={e => { const el=e.currentTarget; el.style.borderColor='var(--border)'; el.style.transform='none'; el.style.boxShadow='none'; }}
               >
-                <div style={{ height:90, display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'var(--sp-3)', background:'var(--bg)', borderRadius:'var(--radius-md)' }}>
-                  <img src={`/images/${cat.img}`} alt={cat.name} style={{ maxHeight:70, maxWidth:'85%', objectFit:'contain' }} />
+                <div style={{ height:120, display:'flex', alignItems:'center', justifyContent:'center', marginBottom:'var(--sp-3)', background:'var(--bg)', borderRadius:'var(--radius-md)' }}>
+                  <img src={`/images/${cat.img}`} alt={cat.name} style={{ maxHeight:100, maxWidth:'85%', objectFit:'contain', transition: 'transform 0.3s' }} 
+                    onMouseEnter={e => e.target.style.transform='scale(1.08)'}
+                    onMouseLeave={e => e.target.style.transform='scale(1)'}
+                  />
                 </div>
                 <div style={{ fontWeight:700, fontSize:13, color:'var(--text-1)' }}>{cat.name}</div>
                 <div style={{ fontSize:11, color:'var(--text-3)', marginTop:3 }}>{cat.desc}</div>
