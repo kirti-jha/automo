@@ -206,6 +206,11 @@ export const PRODUCTS = [
   { id:'p_car_acc_148', cat:'car_acc', name:'3M 7D Custom Floor Mats Set', partNo:'PT-CARACC-4382', brand:'3M', price:2935, mrp:4665, img:'p_car_acc_148.jpg', type:'Aftermarket', fitment:'Universal with Clips', rating:4.5, reviews:589, stock:true, badge:'New' },
   { id:'p_car_acc_149', cat:'car_acc', name:'Armor All Windshield UV Sun Shade', partNo:'PT-CARACC-4244', brand:'Armor All', price:3759, mrp:5444, img:'p_car_acc_149.jpg', type:'Genuine', fitment:'Universal 130×60cm', rating:4.6, reviews:375, stock:true, badge:'' },
   { id:'p_car_acc_150', cat:'car_acc', name:'Michelin Collapsible Trunk Organizer', partNo:'PT-CARACC-1771', brand:'Michelin', price:1591, mrp:2050, img:'p_car_acc_150.jpg', type:'Aftermarket', fitment:'Universal 42L', rating:4.8, reviews:489, stock:true, badge:'Hot' },
+  { id:'p_bike_gear_200', cat:'bike_gear', name:'Vega Crux Half Face Helmet', partNo:'PT-BIKEGEAR-4001', brand:'Vega', price:1150, mrp:1350, img:'p_bike_gear_200.jpg', type:'Genuine', fitment:'Universal M/L', rating:4.5, reviews:852, stock:true, badge:'Best Seller' },
+  { id:'p_bike_gear_201', cat:'bike_gear', name:'Studds Thunder Full Face Helmet', partNo:'PT-BIKEGEAR-4002', brand:'Studds', price:1850, mrp:2150, img:'p_bike_gear_201.jpg', type:'Genuine', fitment:'Universal L/XL', rating:4.7, reviews:1245, stock:true, badge:'Hot' },
+  { id:'p_bike_gear_202', cat:'bike_gear', name:'SMK Twister Full Face Helmet', partNo:'PT-BIKEGEAR-4003', brand:'SMK', price:4300, mrp:4800, img:'p_bike_gear_202.jpg', type:'Genuine', fitment:'Universal L', rating:4.8, reviews:320, stock:true, badge:'Premium' },
+  { id:'p_bike_gear_203', cat:'bike_gear', name:'Royal Enfield Classic Open Face Helmet', partNo:'PT-BIKEGEAR-4004', brand:'Royal Enfield', price:2400, mrp:2700, img:'p_bike_gear_203.jpg', type:'Genuine', fitment:'Universal L', rating:4.6, reviews:412, stock:true, badge:'' },
+  { id:'p_bike_gear_204', cat:'bike_gear', name:'Axor Street Batman Graphic Helmet', partNo:'PT-BIKEGEAR-4005', brand:'Axor', price:4999, mrp:5499, img:'p_bike_gear_204.jpg', type:'Genuine', fitment:'Universal M/L', rating:4.9, reviews:521, stock:true, badge:'New' },
 ];
 
 export const BRANDS = [
@@ -224,11 +229,6 @@ export const TESTIMONIALS = [
   { name:'Deepa Nair', city:'Chennai', text:'Best prices online. Got Exide battery installed via their tie-up mechanic. 10/10!', rating:5, car:'Toyota Innova' },
   { name:'Suresh Mehta', city:'Mumbai', text:'KYB shocks transformed my ride quality. Easy install and great value for money.', rating:5, car:'Kia Seltos' },
   { name:'Anita Verma', city:'Pune', text:'Ordered a full clutch kit for my Swift. Fitment perfect, genuine LUK parts!', rating:5, car:'Maruti Swift' },
-  { id:'p_bike_gear_200', cat:'bike_gear', name:'Vega Crux Half Face Helmet', partNo:'PT-BIKEGEAR-4001', brand:'Vega', price:1150, mrp:1350, img:'p_bike_gear_200.jpg', type:'Genuine', fitment:'Universal M/L', rating:4.5, reviews:852, stock:true, badge:'Best Seller' },
-  { id:'p_bike_gear_201', cat:'bike_gear', name:'Studds Thunder Full Face Helmet', partNo:'PT-BIKEGEAR-4002', brand:'Studds', price:1850, mrp:2150, img:'p_bike_gear_201.jpg', type:'Genuine', fitment:'Universal L/XL', rating:4.7, reviews:1245, stock:true, badge:'Hot' },
-  { id:'p_bike_gear_202', cat:'bike_gear', name:'SMK Twister Full Face Helmet', partNo:'PT-BIKEGEAR-4003', brand:'SMK', price:4300, mrp:4800, img:'p_bike_gear_202.jpg', type:'Genuine', fitment:'Universal L', rating:4.8, reviews:320, stock:true, badge:'Premium' },
-  { id:'p_bike_gear_203', cat:'bike_gear', name:'Royal Enfield Classic Open Face Helmet', partNo:'PT-BIKEGEAR-4004', brand:'Royal Enfield', price:2400, mrp:2700, img:'p_bike_gear_203.jpg', type:'Genuine', fitment:'Universal L', rating:4.6, reviews:412, stock:true, badge:'' },
-  { id:'p_bike_gear_204', cat:'bike_gear', name:'Axor Street Batman Graphic Helmet', partNo:'PT-BIKEGEAR-4005', brand:'Axor', price:4999, mrp:5499, img:'p_bike_gear_204.jpg', type:'Genuine', fitment:'Universal M/L', rating:4.9, reviews:521, stock:true, badge:'New' },
 ];
 
 export const categories = CATEGORIES;
